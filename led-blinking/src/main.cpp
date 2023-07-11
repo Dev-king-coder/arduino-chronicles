@@ -1,8 +1,7 @@
 #include <Arduino.h>
-#define onboard 13
-// put function declarations here:
 
 void setup() {
+  // put your setup code here, to run once:
   pinMode(LED_BUILTIN,OUTPUT);
 }
 
