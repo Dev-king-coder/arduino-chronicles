@@ -19,20 +19,20 @@ void setup()
 void loop()
 {
   // put your main code here, to run repeatedly:
-  for(int i=0;i<4;i++){
-    digitalWrite(LED_ARRAY[i], HIGH);
-    delay(50);
-    digitalWrite(LED_ARRAY[i+1], HIGH);
-    delay(50);
+  for(int i=0;i<3;i++){
     digitalWrite(LED_ARRAY[i], LOW);
+    delay(50);
+    digitalWrite(LED_ARRAY[i+1], LOW);
+    delay(50);
+    digitalWrite(LED_ARRAY[i], HIGH);
     delay(50);
   }
-  for(int i=4;i>0;i--){
-    digitalWrite(LED_ARRAY[i], HIGH);
-    delay(50);
-    digitalWrite(LED_ARRAY[i-1], HIGH);
-    delay(50);
+  for(int i=4;i>1;i--){
     digitalWrite(LED_ARRAY[i], LOW);
+    delay(50);
+    digitalWrite(LED_ARRAY[i-1], LOW);
+    delay(50);
+    digitalWrite(LED_ARRAY[i], HIGH);
     delay(50);
   }
 }
